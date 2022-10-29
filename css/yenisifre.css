@@ -1,0 +1,89 @@
+body {
+  position: relative;
+  background-color: #333333;
+  font-family: "Balsamiq Sans";
+}
+
+#container1 {
+  position: relative;
+  /*background-color: aqua;*/
+  width: 100%;
+  height: 300px;
+}
+
+#container2 {
+  position: relative;
+  /*background-color: #46fd1e;*/
+  width: 100%;
+  height: 180px;
+}
+
+#container3 {
+  position: absolute;
+  /*background-color: red;*/
+  width: 100%;
+  height: 10%;
+  bottom: -15%;
+}
+
+header {
+  position: absolute;
+  color: #a00641;
+  font-size: 200px;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#newpassword {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  font-size: 25px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-55%, -50%);
+  width: 30%;
+  height: 20%;
+}
+
+#newpasswordagain {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  font-size: 25px;
+  left: 50%;
+  top: 100%;
+  transform: translate(-55%, -50%);
+  width: 30%;
+  height: 20%;
+}
+
+button {
+  position: absolute;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Balsamiq Sans";
+  font-size: 20px;
+  left: 50%;
+  bottom: 125%;
+  transform: translate(-80%, 200%);
+  cursor: pointer;
+}
+
+#eye1 {
+  position: absolute;
+  width: 2%;
+  right: 38%;
+  bottom: 45%;
+  cursor: pointer;
+}
+
+#eye2 {
+  position: absolute;
+  width: 2%;
+  right: 38%;
+  bottom: -5%;
+  cursor: pointer;
+}

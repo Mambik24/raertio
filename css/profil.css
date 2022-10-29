@@ -1,0 +1,616 @@
+body {
+  position: relative;
+  background: url(../Images/Raertio\ Background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #333333;
+  font-family: "Balsamiq Sans";
+  font-weight: bold;
+}
+
+#container1 {
+  position: relative;
+  /*background-color: cornflowerblue;*/
+  width: 100%;
+  height: 280px;
+}
+
+#container2 {
+  position: relative;
+  /*background-color: crimson;*/
+  width: 100%;
+  height: 463.4px;
+  opacity: 1;
+  pointer-events: none;
+}
+
+#container3 {
+  position: absolute;
+  /*background-color: #e90e0e;*/
+  width: 4%;
+  bottom: -163%;
+  right: 40px;
+  font-size: 40px;
+}
+.fa-circle-info {
+  width: 50px;
+}
+
+/*.watchlist-button {
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  top: 20%;
+  left: 7%;
+  border: 4px solid black;
+  transform: translate(1%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.readlist-button {
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-55%, 0%);
+  border: 4px solid black;
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gamelist-button {
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  top: 20%;
+  right: 7%;
+  border: 4px solid black;
+  transform: translate(-12%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.watch-vote-button {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  top: 45%;
+  left: 7%;
+  border: 4px solid black;
+  transform: translate(1%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.read-vote-button {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  top: 45%;
+  left: 50%;
+  border: 4px solid black;
+  transform: translate(-55%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game-vote-button {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  top: 45%;
+  right: 7%;
+  border: 4px solid black;
+  transform: translate(-12%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.watch-comment-button {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  top: 70%;
+  left: 7%;
+  border: 4px solid black;
+  transform: translate(1%, 0%);
+  transition: all 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.read-comment-button {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  top: 70%;
+  left: 50%;
+  border: 4px solid black;
+  transform: translate(-55%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game-comment-button {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  top: 70%;
+  right: 7%;
+  border: 4px solid black;
+  transform: translate(-12%, 0%);
+  transition: all 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}*/
+
+#profile-pic-change-sceen::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+#profile-pic-change-sceen::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background-color: darkblue;
+}
+
+#profile-pic-change-sceen {
+  position: absolute;
+  /*background-color: darkmagenta;*/
+  background-color: #fff;
+  width: 40%;
+  height: 433px;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px 4px 0px 4px;
+  transform: translate(69.5%, -38%);
+  overflow-y: scroll;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+
+#profile-pic-text-box {
+  position: absolute;
+  background-color: coral;
+  background-color: #fff;
+  width: 40%;
+  height: 80px;
+  bottom: 0;
+  border: 4px solid black;
+  transform: translate(69.5%, -129%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+
+#profile-pic-text {
+  position: absolute;
+  font-size: 24px;
+  margin: 0px;
+  bottom: 5px;
+  left: 30%;
+  transform: translate(-20%, -70%);
+}
+
+#profile-pic-change {
+  position: absolute;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 0px;
+  top: 80%;
+  left: 23%;
+  cursor: pointer;
+}
+
+#profile-pic {
+  position: absolute;
+  width: 15%;
+  top: 18%;
+  left: 10%;
+
+  pointer-events: auto;
+}
+
+#username {
+  position: absolute;
+  color: #fff;
+  margin: 0px;
+  font-size: 20px;
+  top: 30%;
+  left: 30%;
+}
+
+#membership-date {
+  position: absolute;
+  color: #fff;
+  margin: 0px;
+  font-size: 20px;
+  top: 43%;
+  left: 30%;
+}
+
+#number-of-votes {
+  position: absolute;
+  color: #fff;
+  margin: 0px;
+  font-size: 20px;
+  top: 56%;
+  left: 30%;
+}
+
+#account-settings-button {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  font-weight: bold;
+  background-color: #fff;
+  text-align: left;
+  border: 2px solid black;
+  font-size: 18px;
+  width: 12%;
+  top: 68%;
+  left: 30%;
+  cursor: pointer;
+}
+
+/*#kutu {
+  position: absolute;
+  background-color: darkorange;
+  width: 12%;
+  height: 25%;
+  top: 78%;
+  left: 30%;
+  opacity: 0.5;
+  pointer-events: auto;
+}*/
+
+/*#account-settings-box {
+    position: absolute;
+    font-family: "Balsamiq Sans";
+    font-weight: bold;
+    background-color: #fff;
+    text-align: left;
+    border: 2px solid black;
+    font-size: 18px;
+    width: 12%;
+    top: 77%;
+    left: 30%;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.1s;
+  }
+  #account-settings-box.show {
+    opacity: 1;
+    pointer-events: auto;
+  }*/
+
+/*#account-settings-list {
+    /*border: 1px solid black;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  #account-settings-list.show {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+  }*/
+
+.password-change-button {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  font-weight: bold;
+  font-size: 16px;
+  width: 12%;
+  top: 78%;
+  left: 30%;
+  background-color: #fff;
+  border-top: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nickname-change-button {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  font-weight: bold;
+  font-size: 15px;
+  width: 12%;
+  top: 86.6%;
+  left: 30%;
+  background-color: #fff;
+  border-top: 0px;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+.delete-account-button {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  font-weight: bold;
+  font-size: 15px;
+  width: 12%;
+  top: 94.1%;
+  left: 30%;
+  background-color: #fff;
+  border-top: 0px;
+  border-left: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#lists-text {
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  margin: 0px;
+  border: 4px solid black;
+  width: 20%;
+  left: 50%;
+  transform: translate(-57%, 40%);
+}
+
+/*.plan {
+    text-align: center;
+    padding: 90.1px 4% 0% 7%;
+    width: 20.3%;
+    float: left;
+  }
+
+  .inner-plan {
+    position: relative;
+    background-color: #fff;
+    border: 4px solid black;
+  }*/
+
+#my-movies {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  top: 8%;
+  left: 16%;
+}
+
+#my-books {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  top: 8%;
+  left: 47%;
+}
+
+#my-games {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  top: 8%;
+  left: 78%;
+}
+
+#pic1 {
+  position: absolute;
+  width: 40%;
+  left: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic2 {
+  position: absolute;
+  width: 40%;
+  right: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic3 {
+  position: absolute;
+  width: 40%;
+  bottom: -15%;
+  left: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic4 {
+  position: absolute;
+  width: 40%;
+  bottom: -15%;
+  right: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic5 {
+  position: absolute;
+  width: 40%;
+  bottom: -80%;
+  left: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic6 {
+  position: absolute;
+  width: 40%;
+  bottom: -80%;
+  right: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic7 {
+  position: absolute;
+  width: 40%;
+  bottom: -145%;
+  left: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#pic8 {
+  position: absolute;
+  width: 40%;
+  bottom: -145%;
+  right: 5%;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.exit-icon {
+  position: absolute;
+  width: 50px;
+  top: 20%;
+  right: 5%;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.fa-play {
+  position: absolute;
+  transform: rotate(180deg);
+  font-size: 10px;
+  right: 8%;
+  top: 17%;
+  transition: transform 0.3s;
+}
+
+.play0 {
+  width: 10%;
+  right: 4%;
+}
+
+/*.play1,
+.play2,
+.play3 {
+  width: 6%;
+}
+
+.play4,
+.play5,
+.play6 {
+  width: 6%;
+  right: 4%;
+  transition: transform 0.5s;
+}
+
+.play7,
+.play8,
+.play9 {
+  width: 6%;
+  right: 4%;
+  transition: transform 0.7s;
+}*/
+
+/*#activity-box {
+  font-family: "Balsamiq Sans";
+  font-size: 15px;
+  font-weight: bold;
+  background: none;
+  width: 100%;
+  border: none;
+  pointer-events: none;
+}*/
+
+#delete-account-box {
+  position: absolute;
+  /*background-color: aqua;*/
+  width: 40%;
+  height: 500px;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+#delete-account-text {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  font-size: 70px;
+  height: 65%;
+  text-align: center;
+  border: 4px solid black;
+}
+
+#yesorno {
+  position: absolute;
+  /*background-color: coral;*/
+  width: 100%;
+  height: 25%;
+  bottom: 5%;
+}
+
+#yes {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  color: #fff;
+  background-color: #5c5c5c;
+  font-size: 70px;
+  width: 45%;
+  bottom: 5%;
+  border: 4px solid black;
+  transform: translate(0%, -10%);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#no {
+  position: absolute;
+  font-family: "Balsamiq Sans";
+  color: #fff;
+  background-color: #5c5c5c;
+  font-size: 70px;
+  width: 45%;
+  bottom: 5%;
+  right: 0%;
+  border: 4px solid black;
+  transform: translate(0%, -10%);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  pointer-events: auto;
+}

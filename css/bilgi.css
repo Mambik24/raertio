@@ -1,0 +1,158 @@
+body {
+  background-color: #333333;
+  font-family: "Balsamiq Sans";
+  font-weight: bold;
+}
+
+#container1 {
+  position: relative;
+  height: 115px;
+}
+
+#container2 {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  height: 552px;
+}
+
+#purpose-container {
+  position: absolute;
+  left: 5%;
+  width: 40%;
+  height: 184px;
+}
+
+#founder-container {
+  position: absolute;
+  right: 5%;
+  top: 33.3%;
+  width: 40%;
+  height: 184px;
+}
+
+#contact-container {
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  width: 40%;
+  height: 184px;
+}
+
+#title {
+  position: absolute;
+  color: #a00641;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#purpose-title {
+  position: absolute;
+  color: #fff;
+  font-size: 28px;
+  left: 2%;
+}
+
+#purpose-comment {
+  position: absolute;
+  font-size: 18px;
+  left: 2%;
+  top: 34%;
+}
+
+#founder-title {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  left: 2%;
+}
+
+#founder-comment {
+  position: absolute;
+  font-size: 18px;
+  left: 2%;
+  top: 34%;
+}
+
+#contact-title {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  left: 2%;
+}
+
+#contact-line {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  left: 2%;
+  top: 9%;
+}
+
+#contact-comment1 {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  margin: 0;
+  left: 2%;
+  top: 34%;
+}
+
+#contact-comment2 {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  margin: 0;
+  left: 2%;
+  top: 50%;
+}
+
+#contact-comment3 {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  margin: 0;
+  left: 2%;
+  top: 80%;
+}
+
+.fa-instagram {
+  position: absolute;
+  color: black;
+  width: 4%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.fa-twitter {
+  position: absolute;
+  color: black;
+  width: 4%;
+  top: 50%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-user {
+  position: absolute;
+  color: black;
+  width: 4%;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+#container-sitemap{
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  right: 0px;
+  bottom: 0px;
+}
+
+#container-sitemap a{
+  color: white;
+}

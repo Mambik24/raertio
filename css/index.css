@@ -1,0 +1,121 @@
+body {
+    background-color: #333333;
+    font-family: "Balsamiq Sans";
+    background-image: url(../Images/Afiş2.png);
+  }
+
+  #container1 {
+    position: absolute;
+    /*background-color: #0088ff;*/
+    width: 45%;
+    height: 36%;
+    top: 30%;
+    left: 12%;
+  }
+
+  #container2 {
+    position: absolute;
+    /*background-color: hotpink;*/
+    width: 29.9%;
+    height: 16.5%;
+    bottom: 50%;
+    right: 9%;
+    transform: translate(0%, 50%);
+  }
+
+  #container3 {
+    position: absolute;
+    /*background-color: aqua;*/
+    width: 29.9%;
+    height: 10%;
+    bottom: 30%;
+    right: 9%;
+  }
+
+  #container4 {
+    position: absolute;
+    width: 3%;
+    bottom: 0px;
+    right: 40px;
+    font-size: 40px;
+  }
+
+  header {
+    position: absolute;
+    color: #a00641;
+    font-size: 200px;
+    font-weight: bold;
+  }
+
+  p {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  div #nicknamebox input {
+    position: absolute;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Balsamiq Sans";
+  }
+
+  div #passwordbox input {
+    position: absolute;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    top: 60px;
+    font-size: 20px;
+    font-family: "Balsamiq Sans";
+  }
+
+  div #signup {
+    position: absolute;
+    text-decoration: none;
+    width: 37%;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  div #signin {
+    position: absolute;
+    text-decoration: none;
+    width: 37%;
+    right: 0%;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  div #forgotpassword {
+    position: absolute;
+    text-decoration: none;
+    background-color: #a00641;
+    width: 45%;
+    right: 23%;
+    bottom: 0;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #eye {
+    position: absolute;
+    width: 5%;
+    right: 10%;
+    bottom: 17%;
+    cursor: pointer;
+  }

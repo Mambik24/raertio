@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="../css/menu.css" />
+    <title>raertio</title>
+  </head>
+  <body>
+    
+    <div id="container1">
+      <nav>
+        <div class="bar">
+          <div class="container container-bar">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="menu-simge">
+              <span class="cubuk cubuk1"></span>
+              <span class="cubuk cubuk2"></span>
+              <span class="cubuk cubuk3"></span>
+            </div>
+            <div class="menu-icerik">
+              <li><a href="../html/menu.html">Ana Sayfa</a></li>
+              <li><a href="../html/film-ana.html">Filmler</a></li>
+              <li><a href="../html/oyun-ana.html">Oyunlar</a></li>
+              <li><a href="../html/kitap-ana.html">Kitaplar</a></li>
+              <li><a href="../html/bilgi.html">Hakkında</a></li>
+              <li><a href="../html/profil.html">Profil</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="profile-pic-btn">
+      </div>
+      <div id="infos">
+        <p id="username">Kullanıcı Adı: </p>
+        <p id="membership-date">Üyelik Tarihi: </p>
+      </div>
+      <button
+        onfocusin="openAccountSettingsBox()"
+        onfocusout="closeAccountSettingsBox()"
+        id="account-settings-button"
+      >
+        Hesap Ayarları
+        <img class="fa-play play0" src="../Images/playicon.png">
+      </button>
+      
+      <div id="account-settings-box">
+        <button
+          onclick = "changePassword()"
+          class="password-change-button"
+          >Şifre Değiştir</button
+        >
+        <button
+          onclick="changeNickname()"
+          class="nickname-change-button"
+          >Kullanıcı Adı Değiştir</button
+        >
+        <button
+          onclick="openDeleteBox()"
+          class="delete-account-button"
+          >Hesabı Sil</button
+        >
+      </div>
+
+
+      <!-- <div id="kutu"></div> -->
+      <div>
+        <img onclick="exitProfile()" src="../Images/exiticon.png" class="exit-icon">
+      </div>
+    </div>
+    
+
+    <!--<div id="container2">
+      <p id="lists-text">Listelerim</p>
+      <p id="my-movies">Film</p>
+      <p id="my-books">Kitap</p>
+      <p id="my-games">Oyun</p>
+
+       <div class="plans">
+        <div class="plan">
+          <div class="inner-plan watchlist-button">
+            <button
+              onfocusin="openWatchActivity()"
+              onfocusout="closeWatchActivity()"
+              id="activity-box"
+            >
+              İzleyeceklerim
+              <img class="fa-play play1" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan readlist-button">
+            <button
+              onfocusin="openReadActivity()"
+              onfocusout="closeReadActivity()"
+              id="activity-box"
+            >
+              Okuyacaklarım
+              <img class="fa-play play2" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan gamelist-button">
+            <button
+              onfocusin="openGameActivity()"
+              onfocusout="closeGameActivity()"
+              id="activity-box"
+            >
+              Oynayacaklarım
+              <img class="fa-play play3" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan watch-vote-button">
+            <button
+              style="pointer-events: auto"
+              onfocusin="openWatchVote()"
+              onfocusout="closeWatchVote()"
+              id="activity-box"
+            >
+              Oylamalar
+              <img class="fa-play play4" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan read-vote-button">
+            <button
+              style="pointer-events: auto"
+              onfocusin="openReadVote()"
+              onfocusout="closeReadVote()"
+              id="activity-box"
+            >
+              Oylamalar
+              <img class="fa-play play5" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan game-vote-button">
+            <button
+              style="pointer-events: auto"
+              onfocusin="openGameVote()"
+              onfocusout="closeGameVote()"
+              id="activity-box"
+            >
+              Oylamalar
+              <img class="fa-play play6" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan watch-comment-button">
+            <button
+              style="pointer-events: auto"
+              onfocusin="openWatchComment()"
+              onfocusout="closeWatchComment()"
+              id="activity-box"
+            >
+              Yorumlar
+              <img class="fa-play play7" src="../Images/playicon.png">
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan read-comment-button">
+            Yorumlar
+            <img class="fa-play play8" src="../Images/playicon.png">
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan game-comment-button">
+            Yorumlar
+            <img class="fa-play play9" src="../Images/playicon.png">
+          </div>
+        </div>
+      </div>
+
+      <div id="watchlist">
+        <img id="watchlist-pic1" src="../Images/imagesicon.png" alt="" />
+        <img id="watchlist-pic2" src="../Images/imagesicon.png" alt="" />
+        <img id="watchlist-pic3" src="../Images/imagesicon.png" alt="" />
+        <img id="watchlist-pic4" src="../Images/imagesicon.png" alt="" />
+      </div>
+
+      <div id="watchlist-vote">
+        <img id="watchlist-vote-pic1" src="../Images/imagesicon.png" alt="" />
+        <p id="watchlist-vote-text1">6</p>
+        <img id="watchlist-star1" src="../Images/Star.png" alt="" />
+
+        <img id="watchlist-vote-pic2" src="../Images/imagesicon.png" alt="" />
+        <p id="watchlist-vote-text2">10</p>
+        <img id="watchlist-star2" src="../Images/Star.png" alt="" />
+
+        <img id="watchlist-vote-pic3" src="../Images/imagesicon.png" alt="" />
+        <p id="watchlist-vote-text3">4</p>
+        <img id="watchlist-star3" src="../Images/Star.png" alt="" />
+
+        <img id="watchlist-vote-pic4" src="../Images/imagesicon.png" alt="" />
+        <p id="watchlist-vote-text4">8</p>
+        <img id="watchlist-star4" src="../Images/Star.png" alt="" />
+      </div>
+
+      <div id="watchlist-comment">
+        <img id="watchlist-comment-pic1" src="../Images/imagesicon.png" alt="" />
+        <div id="watchlist-comment-container">
+          <p id="watchlist-comment-text1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+            dolor similique reiciendis enim commodi placeat odit nisi neque esse
+            culpa velit eius, omnis, illum quaerat vel minima deserunt sint
+            officiis.
+          </p>
+        </div>
+        <img id="watchlist-comment-pic2" src="../Images/imagesicon.png" alt="" />
+        <img id="watchlist-comment-pic3" src="../Images/imagesicon.png" alt="" />
+        <img id="watchlist-comment-pic4" src="../Images/imagesicon.png" alt="" />
+      </div>
+
+      <div id="readlist">
+        <img id="readlist-pic1" src="../Images/imagesicon.png" alt="" />
+        <img id="readlist-pic2" src="../Images/imagesicon.png" alt="" />
+        <img id="readlist-pic3" src="../Images/imagesicon.png" alt="" />
+        <img id="readlist-pic4" src="../Images/imagesicon.png" alt="" />
+      </div>
+
+      <div id="readlist-vote">
+        <img id="readlist-vote-pic1" src="../Images/imagesicon.png" alt="" />
+        <p id="readlist-vote-text1">5</p>
+        <img id="readlist-star1" src="../Images/Star.png" alt="" />
+
+        <img id="readlist-vote-pic2" src="../Images/imagesicon.png" alt="" />
+        <p id="readlist-vote-text2">9</p>
+        <img id="readlist-star2" src="../Images/Star.png" alt="" />
+
+        <img id="readlist-vote-pic3" src="../Images/imagesicon.png" alt="" />
+        <p id="readlist-vote-text3">4</p>
+        <img id="readlist-star3" src="../Images/Star.png" alt="" />
+
+        <img id="readlist-vote-pic4" src="../Images/imagesicon.png" alt="" />
+        <p id="readlist-vote-text4">10</p>
+        <img id="readlist-star4" src="../Images/Star.png" alt="" />
+      </div>
+
+      <div id="gamelist">
+        <img id="gamelist-pic1" src="../Images/imagesicon.png" alt="" />
+        <img id="gamelist-pic2" src="../Images/imagesicon.png" alt="" />
+        <img id="gamelist-pic3" src="../Images/imagesicon.png" alt="" />
+        <img id="gamelist-pic4" src="../Images/imagesicon.png" alt="" />
+      </div>
+
+      <div id="gamelist-vote">
+        <img id="gamelist-vote-pic1" src="../Images/imagesicon.png" alt="" />
+        <p id="gamelist-vote-text1">8</p>
+        <img id="gamelist-star1" src="../Images/Star.png" alt="" />
+
+        <img id="gamelist-vote-pic2" src="../Images/imagesicon.png" alt="" />
+        <p id="gamelist-vote-text2">1</p>
+        <img id="gamelist-star2" src="../Images/Star.png" alt="" />
+
+        <img id="gamelist-vote-pic3" src="../Images/imagesicon.png" alt="" />
+        <p id="gamelist-vote-text3">3</p>
+        <img id="gamelist-star3" src="../Images/Star.png" alt="" />
+
+        <img id="gamelist-vote-pic4" src="../Images/imagesicon.png" alt="" />
+        <p id="gamelist-vote-text4">7</p>
+        <img id="gamelist-star4" src="../Images/Star.png" alt="" />
+      </div> -->
+
+      <div id="profile-pic-change-sceen">
+        <img
+          onclick="changePic1()"
+          onmouseover="openPointerEvent()"
+          id="pic1"
+          src="../Images/avatar1.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic2()"
+          id="pic2"
+          src="../Images/avatar2.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic3()"
+          id="pic3"
+          src="../Images/avatar3.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic4()"
+          id="pic4"
+          src="../Images/avatar4.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic5()"
+          id="pic5"
+          src="../Images/avatar5.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic6()"
+          id="pic6"
+          src="../Images/avatar6.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic7()"
+          id="pic7"
+          src="../Images/avatar7.png"
+          alt=""
+        />
+
+        <img
+          onclick="changePic8()"
+          id="pic8"
+          src="../Images/avatar8.png"
+          alt=""
+        />
+      </div>
+      <div id="profile-pic-text-box">
+        <p id="profile-pic-text">Yeni Profil Resminizi Seçiniz.</p>
+      </div>
+
+      <div id="delete-account-box">
+        <div id="delete-account-text">
+          Hesabınızı Silmek İstediğinizden Emin Misiniz?
+        </div>
+
+        <div id="yesorno">
+          <button type="submit" id="yes">EVET</button>
+          <button type="submit" id="no">HAYIR</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="container3">
+      <a style="color: #000000" href="../html/bilgi.html">
+        <img class="fa-circle-info" src="../Images/infoicon.png">
+      </a>
+    </div>
+
+    <script src="../js/profile-script.js"></script>
+  </body>
+</html>

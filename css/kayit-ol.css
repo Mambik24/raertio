@@ -1,0 +1,128 @@
+body {
+    background-color: #333333;
+    font-family: "Balsamiq Sans";
+  }
+
+  #container1 {
+    position: relative;
+    /*background-color: #0088ff;*/
+    width: 45%;
+    height: 300px;
+    top: 160px;
+    left: 100px;
+  }
+
+  #container2 {
+    position: relative;
+    /*background-color: #2efc0a;*/
+    text-align: center;
+    width: 40%;
+    height: 235px;
+    float: right;
+    bottom: 40px;
+    right: 250px;
+  }
+
+  #container3 {
+    position: absolute;
+    /*background-color: aqua;*/
+    float: right;
+    width: 27%;
+    height: 5%;
+    bottom: 23%;
+    right: 9.3%;
+  }
+
+  #container4 {
+    position: absolute;
+    color: #939393;
+    width: 3%;
+    bottom: 0px;
+    right: 40px;
+    font-size: 40px;
+  }
+
+  header {
+    position: absolute;
+    color: #a00641;
+    font-size: 200px;
+    font-weight: bold;
+  }
+
+  p {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #emailbox input {
+    position: absolute;
+    margin: 10px;
+    width: 67%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Balsamiq Sans";
+  }
+
+  #nicknamebox input {
+    position: absolute;
+    margin: 10px;
+    width: 67%;
+    height: 40px;
+    top: 60px;
+    font-size: 20px;
+    font-family: "Balsamiq Sans";
+  }
+
+  #passwordbox input {
+    position: absolute;
+    margin: 10px;
+    width: 67%;
+    height: 40px;
+    top: 120px;
+    font-size: 20px;
+    font-family: "Balsamiq Sans";
+  }
+
+  #passwordagainbox input {
+    position: absolute;
+    margin: 10px;
+    width: 67%;
+    height: 40px;
+    top: 180px;
+    font-size: 20px;
+    font-family: "Balsamiq Sans";
+  }
+
+  #memberAddBtn {
+    position: absolute;
+    text-decoration: none;
+    width: 45%;
+    right: 50%;
+    top: 50%;
+    transform: translate( 50%, -50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  #eye1 {
+    position: absolute;
+    width: 4%;
+    right: -17%;
+    bottom: 32%;
+    cursor: pointer;
+  }
+
+  #eye2 {
+    position: absolute;
+    width: 4%;
+    right: -17%;
+    bottom: 6%;
+    cursor: pointer;
+  }
